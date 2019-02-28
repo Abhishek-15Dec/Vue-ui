@@ -27,7 +27,7 @@ data () {
   },
   created(){
 
-   axios.get(`http://localhost:3400/users/users`)
+   axios.get(`http://localhost:3500/users/users`)
     .then(res => {
       this.user = res.data;
       this.email = res.data.email;

@@ -107,7 +107,7 @@ components: {
 
 created() {
 
-    axios.get(`http://localhost:3400/users/users`)
+    axios.get(`http://localhost:3500/users/users`)
     .then(res => {
      console.log('res here...', res.data);
     })
@@ -136,7 +136,7 @@ created() {
       
     axios({
     method: 'post',
-    url: 'http://localhost:3400/users/create',
+    url: 'http://localhost:3500/users/create',
     data: {userData} ,
     config: { 
       headers: {'Content-Type': 'application/json'}
